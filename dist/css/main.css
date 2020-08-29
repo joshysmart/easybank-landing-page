@@ -612,10 +612,10 @@
     height: 550px;
   }
   .hero:after {
-    background-position: 460px -200px;
+    background-position: 520px -300px;
   }
   .hero__intro {
-    width: 50%;
+    width: 40%;
   }
   .hero__intro h1 {
     font-size: 3rem;
