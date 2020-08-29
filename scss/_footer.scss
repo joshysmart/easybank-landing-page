@@ -1,0 +1,44 @@
+.footer {
+ background: $Dark-Blue;
+ padding: 2.5rem 1.5rem;
+ text-align: center;
+ color: #eff8f8;
+ font-weight: 300;
+ font-size: .9rem;
+
+ .logo {
+  margin-bottom: 2rem;
+ }
+
+ a {
+  color: #eff8f8;
+  transition: all .4s ease-in-out;
+  &:hover {
+   color: $Bright-Cyan;
+
+   svg {
+    path {
+     fill: $Bright-Cyan;
+    }
+   }
+  }
+ }
+
+ .social-media {
+  margin-bottom: 2rem;
+  svg {
+   width: 1.5rem;
+   margin: 0 .4rem;
+  }
+ }
+
+ .request {
+  @include button;
+  padding: .8rem 1.8rem;
+ }
+
+ .copyrights {
+  font-size: .9rem;
+  color: #7e8097;
+ }
+}

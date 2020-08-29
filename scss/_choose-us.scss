@@ -1,0 +1,35 @@
+.choose-us {
+ background: $Light-Grayish-Blue;
+ padding: 3rem 1.5rem;
+ margin: 4rem 0;
+ text-align: center;
+
+ p {
+  font-size: .95rem;
+  margin: 1rem 0;
+  line-height: 1.5rem;
+ }
+
+ .text {
+  h2 {
+   font-size: 2rem;
+   font-weight: 300;
+  }
+ }
+
+ &__items {
+  padding-top: 2.3rem;
+
+  h3 {
+   font-weight: 300;
+  }
+
+  p {
+   font-size: .9rem;
+  }
+
+  &__item {
+   padding: .5rem 0;
+  }
+ }
+}

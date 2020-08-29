@@ -1,0 +1,84 @@
+.header {
+ @include flex-it(row);
+ width: 100%;
+ padding: 1.35rem 1.5rem;
+ background: $White;
+ position: relative;
+ z-index: 2;
+
+ .nav {
+  &__links {
+   transform: translate(0, -100rem);
+   position: absolute;
+   background: $White;
+   top: 4.5rem;
+   left: 1.5rem;
+   right: 1.5rem;
+   @include flex-it(column);
+   padding: 1.5rem 0;
+   border-radius: .3rem;
+   transition: all .4s ease-in-out;
+    
+   li {
+    list-style-type: none;
+    padding: .7rem 0;
+
+   }
+  }
+
+  .open { 
+   transform: translate(0, 0);
+  }
+
+ }
+
+ .request {
+  display: none;
+ }
+
+ .menu-btn {
+  width: 25px;
+  height: 25px;
+  @include flex-it(row);
+  z-index: 2;
+  cursor: url('../img/cursor.svg'), auto;
+
+  &__burger {
+   width: 25px;
+   height: 1px;
+   background: #000;
+   position: relative;
+   transition: all .2s ease-in;
+
+   &:before {
+    width: 25px;
+    height: 1px;
+    position: absolute;
+    content: '';
+    background: #000;
+    top: -5px;
+    transition: all .2s ease-in;
+   }
+ 
+   &:after {
+    width: 25px;
+    height: 1px;
+    position: absolute;
+    content: '';
+    background: #000;
+    top: 5px;
+    transition: all .2s ease-in;
+   }
+  }
+  .open {
+   background: transparent;
+   &:before {
+    transform: rotate(45deg) translate(0px, 6px);
+   }
+   &:after {
+    transform: rotate(-45deg) translate(1px, -7px);
+   }
+  }
+ }
+
+}

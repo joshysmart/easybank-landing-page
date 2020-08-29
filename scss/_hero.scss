@@ -1,0 +1,51 @@
+.hero {
+ @include flex-it(column-reverse);
+ width: 100%;
+ height: 580px;
+ background: $Very-Light-Gray;
+ padding: 0 1.5rem;
+ position: relative;
+ z-index: 1;
+
+ &:after {
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ right: 0;
+ content: '';
+ background-image: url("../img/bg-intro-mobile.svg");
+ background-repeat: no-repeat;
+ background-size: 100%;
+ background-position: 0 -75px;
+ z-index: -1;
+ }
+
+ &__img {
+  width: 100%;
+
+  img {
+   width: 100%;
+   height: 100%;
+  }
+ }
+ &__intro {
+  text-align: center;
+  
+  h1 {
+   font-size: 2.5rem;
+   font-weight: 300;
+   line-height: 3rem;
+   margin: 1rem 0;
+  }
+
+  p {
+   font-size: .95rem;
+   margin: 1rem 0;
+   line-height: 1.5rem;
+  }
+
+  .request {
+   @include button;
+  }
+ }
+}
